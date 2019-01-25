@@ -9,9 +9,11 @@
       </form>
 
 {% if ips %}
+<table style="width=50%">
 {% for ip in ips %}
-	   <h3>{{ ip }}</h3>
+<tr><td>{{ ip }}</td></tr>
 {% endfor %}
+</table>
 {% endif %}
  
 </div>
