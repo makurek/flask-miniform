@@ -43,6 +43,9 @@ def hello():
    # This is executed when regular GET request is issued
    return render_template('hello.html', form=form)
 
+@app.route("/health", methods=['GET'])
+def health():
+   return render_template('health.html')
 
  
 if __name__ == "__main__":
